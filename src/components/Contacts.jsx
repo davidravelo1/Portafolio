@@ -2,6 +2,7 @@ import styled from "styled-components";
 import MapChart from "./Map";
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+
 const Section = styled.div`
     height: 100vh;
     scroll-snap-align: center;

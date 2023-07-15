@@ -1,8 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 import styled from "styled-components";
 import Navbar from './Navbar';
 import { Canvas } from '@react-three/fiber'
 import { MeshDistortMaterial, OrbitControls, Sphere} from '@react-three/drei';
-
 
 const Section = styled.div`
     height: 100vh;
@@ -13,7 +13,8 @@ const Section = styled.div`
     @media only screen and (max-width: 768px) {
         height: 150vh;
     }
-`
+`;
+
 const Container = styled.div`
     margin-left: 100px;
     height: 100%;
@@ -29,7 +30,7 @@ const Container = styled.div`
         justify-content: center;
         margin: 0;
     }
-`
+`;
 
 const Left = styled.div`
    flex:2;
@@ -43,31 +44,37 @@ const Left = styled.div`
         margin: 0;
         align-items: center;
     }
-`
+`;
+
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
     @media only screen and (max-width: 768px){
         text-align: center;
     }
-`
+`;
+
 const Subtitle1 = styled.h3`
     color: #9FA8DA;
     margin:0;
-`
+`;
+
 const Developer = styled.div`
     display: flex; 
     align-items: center; 
     gap: 10px;
-`
+`;
+
 const Subtitle = styled.h2`
     color: #536DFE;
     margin:0;
-`
+`;
+
 const Icon = styled.img`
     height: 5px;
 
-`
+`;
+
 const Describe = styled.p`
     font-size: 15px;
     color: #BDBDBD;
@@ -75,7 +82,7 @@ const Describe = styled.p`
         text-align: center;
         padding: 10px;
     }
-`
+`;
 
 const Button = styled.button`
   width: 100px;
@@ -88,6 +95,7 @@ const Button = styled.button`
   color: black; 
   font-weight: bold;
 `;
+
 const Right = styled.div`
    flex:3;
    position: relative;
@@ -96,6 +104,7 @@ const Right = styled.div`
         width: 100%;
     }
 `;
+
 const Img = styled.img`
     width: 700px;
     height: 500px;

@@ -2,6 +2,7 @@ import { OrbitControls, Stage } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import Gamepad from "./Gamepad"
 import { styled } from "styled-components"
+
 const Desc = styled.p`
   width: 150px;
   height: 60px;

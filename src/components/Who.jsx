@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import styled from "styled-components";
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls} from '@react-three/drei';
@@ -81,7 +82,7 @@ const Right = styled.div`
 function Who() {
     return (
 
-        <Section>
+        <Section id="who">
             <Container>
                 <Left>
                     <Canvas camera={{fov:25, position: [5,5,5]}}>
