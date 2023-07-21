@@ -3,6 +3,9 @@ import styled from "styled-components";
 import Navbar from './Navbar';
 import { Canvas } from '@react-three/fiber'
 import { MeshDistortMaterial, OrbitControls, Sphere} from '@react-three/drei';
+import { Link } from "react-router-dom"
+import documento from "/DavidRavelo_CV.pdf"
+import 'animate.css';
 
 const Section = styled.div`
     height: 100vh;
@@ -46,6 +49,10 @@ const Left = styled.div`
     }
 `;
 
+const Icons = styled.div`
+    display: flex;
+    padding-bottom: 10px;
+`
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
@@ -94,11 +101,14 @@ const Button = styled.button`
   cursor: pointer;
   color: black; 
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 `;
 
 const Right = styled.div`
    flex:3;
    position: relative;
+   padding-top: 20px;
    @media only screen and (max-width: 768px){
         flex: 1;
         width: 100%;
@@ -124,17 +134,20 @@ const Img = styled.img`
     }
      @media only screen and (max-width: 768px){
         flex: 1;
-        width: 300px;
+        width: 350px;
         height: 300px;
+        left: 20px;
+        top: 10px;
     }
 `;
 
+//Hero section, with principal animation 
 function Hero() {
     return (
         <Section>
             <Navbar />
             <Container>
-                <Left>
+                <Left className="animate__animated animate__backInLeft animate__slow ">
                     <Subtitle1>Hi, my name is</Subtitle1>
                     <Title>David Ravelo</Title>
                     <Developer>
@@ -142,9 +155,16 @@ function Hero() {
                         <Subtitle>Front-End web developer</Subtitle>
                     </Developer>
                     <Describe>Human Digital experiencies</Describe>
-                    <Button>Learn more</Button>
+                    <Icons>
+                        <Link to="https://www.instagram.com/davidfe.r/"><box-icon name='instagram-alt' type='logo' color='#c1c3c9'/></Link>
+                        <Link to="https://www.linkedin.com/in/david-fernando-ravelo-garavito-019399258/"><box-icon name='linkedin-square' type='logo' color='#c1c3c9'/></Link>
+                        <Link to="https://github.com/davidravelo1"><box-icon name='github' type='logo' color='#c1c3c9' ></box-icon></Link>
+                    </Icons>
+                    
+                    <a href={documento} download="David_Resume"><Button>My CV</Button></a>
+                    
                 </Left>
-                <Right>
+                <Right className="animate__animated animate__backInRight animate__slow">
                     <Canvas>
                         <OrbitControls enableZoom={false}/>
                         <ambientLight intensity={1} />

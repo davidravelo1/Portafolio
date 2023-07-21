@@ -3,12 +3,15 @@ import styled from "styled-components";
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls} from '@react-three/drei';
 import Cube from "./Cube";
+import { Link } from "react-router-dom";
+
 const Section = styled.div`
     height: 100vh;
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
-`
+`;
+
 const Container = styled.div`
     margin-left: 100px;
     height: 100vh;
@@ -17,7 +20,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0;
-`
+`;
+
 const Left = styled.div`
    flex:1;
    display: flex;
@@ -26,14 +30,16 @@ const Left = styled.div`
    @media only screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
+
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
     @media only screen and (max-width: 768px) {
         font-size: 60px;
     }
-`
+`;
+
 const Developer = styled.div`
     display: flex; 
     align-items: center; 
@@ -43,14 +49,17 @@ const Developer = styled.div`
         align-items: center; 
         text-align: center;
     }
-`
+`;
+
 const Subtitle = styled.h2`
     color: #536DFE;
     margin:0;
-`
+`;
+
 const Icon = styled.img`
     height: 5px;
-`
+`;
+
 const Describe = styled.p`
      @media only screen and (max-width: 768px) {
         font-size: 20px;
@@ -67,6 +76,7 @@ const Button = styled.button`
   color: black; 
   font-weight: bold;
 `;
+
 const Right = styled.div`
    flex:1;
    position: relative;
@@ -99,7 +109,7 @@ function Who() {
                         <Subtitle>Who i am</Subtitle>
                     </Developer>
                     <Describe>Front-End web developer and future systems engineer</Describe>
-                    <Button>See my proyects</Button>
+                    <Link to="/proyects"><Button>See my proyects</Button></Link>
                 </Right>
             </Container>
         </Section>

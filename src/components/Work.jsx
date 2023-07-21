@@ -93,7 +93,7 @@ const Right = styled.div`
 function Works() {
     const [work,setWork] = useState("Web Design")
     return (
-        <Section>
+        <Section id="work">
             <Container>
                 <Left>
                     <List>

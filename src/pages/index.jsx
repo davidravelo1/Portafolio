@@ -3,7 +3,9 @@ import Hero from '../components/Hero';
 import Who from '../components/Who'
 import Work from '../components/Work';
 import Contacts from '../components/Contacts';
+import 'animate.css';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Container = styled.div`
   height: 100vh;
   /*scroll-snap-type: y mandatory;*/
@@ -16,9 +18,10 @@ const Container = styled.div`
     display: none;
   }
 `;
+//Index with components of principal page
 function index() {
   return (
-     <Container>
+     <Container className='animate__backInLeft'>
       <Hero/>
       <Who/>
       <Work/>
