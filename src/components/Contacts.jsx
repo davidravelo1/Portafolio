@@ -73,10 +73,12 @@ const Button = styled.button`
 
 const Right = styled.div`
     flex: 1;
+    margin-top: 105px;
     @media only screen and (max-width: 768px) {
       display: none;
+      margin-top: 10px;
     }
-`
+`;
 
 function Contacts() {
     const ref = useRef()
