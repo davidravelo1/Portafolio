@@ -7,6 +7,8 @@ import styled from 'styled-components'
 // eslint-disable-next-line react-refresh/only-export-components
 const Container = styled.div`
   height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
   /*scroll-snap-type: y mandatory;*/
   scroll-behavior: smooth;
   overflow-y: auto;
@@ -16,6 +18,10 @@ const Container = styled.div`
   &::-webkit-scrollbar{
     display: none;
   } 
+`;
+
+const ContainerM = styled.div`
+  background: url('/FondoAzul.jpg');
 `;
 
 const Cont = styled.div`
@@ -29,14 +35,18 @@ const Title = styled.h1`
 
 function proyects() {
   return (
-    <Container>
-      <Navbar />
-      <Cont>
-        <Title className="animate__animated animate__backInRight">Proyects</Title>
-        <Proyect pre='/Encriptador.png' title='Encriptador Alura' desc='This page is a challenge from Alura Bootcamp'/>
-        <Proyect pre='/Barberia.png' title='Barberia Alura' desc='This page is a basic page about a Barberia with a section of products and contact'/>
-      </Cont>
-    </Container>
+    <ContainerM>
+
+      <Container>
+        <Navbar />
+        <Cont>
+          <Title className="animate__animated animate__backInRight">Proyects</Title>
+          <Proyect pre='/Encriptador.png' title='Encriptador Alura' desc='This page is a challenge from Alura Bootcamp' />
+          <Proyect pre='/Barberia.png' title='Barberia Alura' desc='This page is a basic page about a Barberia with a section of products and contact' />
+        </Cont>
+      </Container>
+    </ContainerM>
+
   )
 }
 

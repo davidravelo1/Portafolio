@@ -21,7 +21,7 @@ const Container = styled.div`
 `;
 const ContainerM = styled.div`
   background: url('/FondoAzul.jpg');
-`
+`;
 //Index with components of principal page
 function index() {
   return (
