@@ -15,6 +15,10 @@ const Section = styled.div`
     border-radius: 25px;
     padding: 0.5rem;
     box-shadow: 10px 5px 5px black;
+    @media only screen and (max-width: 768px) {
+     display: flex;
+     flex-direction: column;
+    }
 `;
 
 const PreVisualization = styled.img`
@@ -31,6 +35,9 @@ const PreVisualization = styled.img`
 const Title_P = styled.h2`
     color: #536DFE;
     grid-column: 3/6;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
 `;
 
 const Description = styled.p`
@@ -51,9 +58,7 @@ const Btn = styled.button`
   font-weight: bold;
   border: solid 2px;
   transition: transform ease-in 0.1s;
-  @media only screen and (max-width: 769px) {
-      margin-right: 15px;
-    }
+
   &:hover{
     background-color: black;
     color: #BBDEFB;
@@ -62,6 +67,13 @@ const Btn = styled.button`
     transform: scale(0.9);
   }
 `;
+const Link_p = styled(Link)`
+  text-decoration: none;
+  @media only screen and (max-width: 769px) {
+      margin-right: 15px;
+      align-self: end;
+    }
+`;
 
 function Proyect(props) {
   return (
@@ -69,7 +81,7 @@ function Proyect(props) {
       <PreVisualization src={props.pre} />
       <Title_P>{props.title}</Title_P>
       <Description>{props.desc}</Description>
-      <Btn><Link to="https://davidravelo1.github.io/Encriptador/">Visit site</Link></Btn>
+      <Link_p to="https://davidravelo1.github.io/Encriptador/"><Btn>Visit site</Btn></Link_p>
     </Section>
   )
 }

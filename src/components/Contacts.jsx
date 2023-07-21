@@ -6,6 +6,9 @@ import { useRef, useState } from 'react';
 const Section = styled.div`
     height: 100vh;
     scroll-snap-align: center;
+    @media only screen and (max-width: 768px) {
+     margin-top: 50px;
+    }
 `
 
 const Container = styled.div`
@@ -19,7 +22,7 @@ const Container = styled.div`
 const Left = styled.div`
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     @media only screen and (max-width: 768px) {
      justify-content: center;
@@ -39,6 +42,9 @@ const Form = styled.form`
 
 const Title = styled.h1`
     font-weight: 300;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 0;
+    }
 `
 
 const Input = styled.input`

@@ -19,13 +19,11 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-    margin-left: 100px;
     height: 100%;
     scroll-snap-align: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
     @media only screen and (max-width: 768px) {
         width: 100%;
         flex-direction: column;
@@ -36,13 +34,12 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-   flex:2;
+   width: 50%;
    display: flex; 
    flex-direction: column;
    justify-content: center;
-   margin-right:100px;
    @media only screen and (max-width: 768px){
-        flex: 1;
+        width: 100%;
         padding: 0;
         margin: 0;
         align-items: center;
@@ -106,7 +103,7 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
-   flex:3;
+   width: 50%;
    position: relative;
    padding-top: 20px;
    @media only screen and (max-width: 768px){
@@ -124,7 +121,6 @@ const Img = styled.img`
     top: 0;
     bottom: 0;
     left: 0.1%;
-    right: 200px;
     align-items: center;
     animation: animate 2s infinite ease alternate;
     @keyframes animate{
@@ -133,10 +129,9 @@ const Img = styled.img`
         }    
     }
      @media only screen and (max-width: 768px){
-        flex: 1;
         width: 350px;
         height: 300px;
-        left: 20px;
+        left: 150px;
         top: 10px;
     }
 `;

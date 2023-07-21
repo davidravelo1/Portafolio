@@ -11,7 +11,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-    width: 1440px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -32,13 +32,21 @@ const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
-  
+  padding: 0;
 `;
 
 const Link_T = styled(Link)`
   text-decoration: none;
   
-`
+`;
+
+const ListItem2 = styled.li`
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+`;
 const ListItem = styled.li`
   text-decoration: none;
   cursor: pointer;
@@ -82,7 +90,7 @@ function Navbar() {
       <Container className="animate__animated animate__backInLeft">
         <Links>
           <List>
-            <Link_T to="/"><ListItem><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ai ai-HomeAlt1"><path d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z" /><path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9v-6z" /></svg></ListItem></Link_T>
+            <Link_T to="/"><ListItem2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ai ai-HomeAlt1"><path d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z" /><path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9v-6z" /></svg></ListItem2></Link_T>
             <ListItem></ListItem>
             <Link_T to="/proyects" ><ListItem href="#who">Proyects</ListItem></Link_T>
             <ListItem ><A href="#who">Who</A></ListItem>
