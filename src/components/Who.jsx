@@ -27,7 +27,7 @@ const Left = styled.div`
    display: flex;
    flex-direction: column;
    margin-right:100px;
-   @media only screen and (max-width: 768px) {
+   @media (max-width: 768px) {
         display: none;
     }
 `;
@@ -35,7 +35,7 @@ const Left = styled.div`
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         font-size: 60px;
     }
 `;
@@ -44,7 +44,7 @@ const Developer = styled.div`
     display: flex; 
     align-items: center; 
     gap: 10px;
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         
         align-items: center; 
         text-align: center;
@@ -61,7 +61,7 @@ const Icon = styled.img`
 `;
 
 const Describe = styled.p`
-     @media only screen and (max-width: 768px) {
+     @media (max-width: 768px) {
         font-size: 20px;
     }
 `
@@ -81,7 +81,7 @@ const Right = styled.div`
    flex:1;
    position: relative;
    top: 20%;
-   @media only screen and (max-width: 768px) {
+   @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: center; 

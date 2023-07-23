@@ -24,7 +24,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -38,7 +38,7 @@ const Left = styled.div`
    display: flex; 
    flex-direction: column;
    justify-content: center;
-   @media only screen and (max-width: 768px){
+   @media (max-width: 768px){
         width: 100%;
         padding: 0;
         margin: 0;
@@ -53,7 +53,7 @@ const Icons = styled.div`
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
-    @media only screen and (max-width: 768px){
+    @media (max-width: 768px){
         text-align: center;
     }
 `;
@@ -82,7 +82,7 @@ const Icon = styled.img`
 const Describe = styled.p`
     font-size: 15px;
     color: #BDBDBD;
-      @media only screen and (max-width: 768px){
+      @media (max-width: 768px){
         text-align: center;
         padding: 10px;
     }
@@ -106,7 +106,7 @@ const Right = styled.div`
    width: 50%;
    position: relative;
    padding-top: 20px;
-   @media only screen and (max-width: 768px){
+   @media (max-width: 768px){
         flex: 1;
         width: 100%;
     }
@@ -128,7 +128,7 @@ const Img = styled.img`
             transform: translateY(30px)
         }    
     }
-     @media only screen and (max-width: 768px){
+     @media (max-width: 768px){
         width: 350px;
         height: 300px;
         left: 150px;

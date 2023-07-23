@@ -5,7 +5,7 @@ import 'animate.css'
 const Section = styled.div`
     display: flex;
     justify-content: center;
-    @media only screen and (max-width: 769px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
 `;

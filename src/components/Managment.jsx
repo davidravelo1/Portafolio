@@ -14,7 +14,7 @@ const Desc = styled.p`
   right: 100px;
   color: black;
   text-align: center;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
       top: 0;
       right: 0;
       left: 0;

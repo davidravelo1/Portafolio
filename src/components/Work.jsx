@@ -21,7 +21,7 @@ const Container = styled.div`
     width: 1400px;
     display: flex;
     justify-content: space-between; 
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 100%;
         flex-direction: column;
     }
@@ -32,7 +32,7 @@ const Left = styled.div`
     display: flex;
     align-items: center;
     
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         padding: 20px;
         justify-content: center;
     }
@@ -42,7 +42,7 @@ const List = styled.ul`
     display: flex;
     flex-direction: column; 
     gap: 20px;
-    @media only screen and (max-width: 768px) {
+    @media  (max-width: 768px) {
         padding: 0;
     
     }
@@ -54,7 +54,7 @@ const ListItem = styled.li`
    color: transparent;
    -webkit-text-stroke: 1px white ; 
    position: relative; 
-   @media only screen and (max-width: 768px) {
+   @media (max-width: 768px) {
         font-size: 24px;
         color: white;
         -webkit-text-stroke: 0px ; 
@@ -86,7 +86,7 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     margin-left: 300px;
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       margin: auto;
     }
 `;

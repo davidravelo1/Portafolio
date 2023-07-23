@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { RenderTexture, Text, PerspectiveCamera} from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
