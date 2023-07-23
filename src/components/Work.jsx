@@ -21,7 +21,7 @@ const Container = styled.div`
     width: 1400px;
     display: flex;
     justify-content: space-between; 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         width: 100%;
         flex-direction: column;
     }
@@ -31,8 +31,7 @@ const Left = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
-    
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         padding: 20px;
         justify-content: center;
     }
@@ -54,7 +53,7 @@ const ListItem = styled.li`
    color: transparent;
    -webkit-text-stroke: 1px white ; 
    position: relative; 
-   @media (max-width: 768px) {
+   @media (max-width: 1080px) {
         font-size: 24px;
         color: white;
         -webkit-text-stroke: 0px ; 
@@ -86,7 +85,7 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     margin-left: 300px;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
       margin: auto;
     }
 `;

@@ -5,13 +5,15 @@ import 'animate.css'
 const Section = styled.div`
     display: flex;
     justify-content: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
       width: 100%;
+      padding: 0 10px;
+      margin-bottom: 90px;
     }
 `;
 
 const Container = styled.div`
-    width: 1400px;
+    width: 1800px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -45,14 +47,13 @@ const ListItem2 = styled.li`
   cursor: pointer;
   font-weight: bold;
   color: white;
-  margin-left: 20px;
 `;
 const ListItem = styled.li`
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
   color: white;
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 1080px) {
       display: none;
     }
 `;
@@ -77,7 +78,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 1080px) {
       margin-right: 15px;
     }
 `;

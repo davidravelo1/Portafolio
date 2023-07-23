@@ -7,7 +7,7 @@ import styled from 'styled-components'
 // eslint-disable-next-line react-refresh/only-export-components
 const Container = styled.div`
   height: 100vh;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   /*scroll-snap-type: y mandatory;*/
   scroll-behavior: smooth;

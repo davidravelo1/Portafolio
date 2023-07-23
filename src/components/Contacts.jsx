@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 const Section = styled.div`
     height: 100vh;
     scroll-snap-align: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
      margin-top: 50px;
     }
 `
@@ -23,8 +23,7 @@ const Left = styled.div`
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
      justify-content: center;
     }
 `
@@ -34,7 +33,7 @@ const Form = styled.form`
    display: flex;
    flex-direction: column;
    gap: 25px;
-   @media (max-width: 768px) {
+   @media (max-width: 1080px) {
       width: 300px;
     }
 
@@ -42,7 +41,8 @@ const Form = styled.form`
 
 const Title = styled.h1`
     font-weight: 300;
-    @media  (max-width: 768px) {
+    margin: 0;
+    @media  (max-width: 1080px) {
         margin-bottom: 0;
     }
 `
@@ -73,8 +73,7 @@ const Button = styled.button`
 
 const Right = styled.div`
     flex: 1;
-    margin-top: 105px;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
       display: none;
       margin-top: 10px;
     }

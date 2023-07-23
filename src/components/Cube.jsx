@@ -13,7 +13,7 @@ function Cube() {
       <RenderTexture attach="map">
         <PerspectiveCamera makeDefault position={[0, 0, 5]}/>
         <color attach="background" args={["#BBDEFB"]}/>
-        <Text ref={textRef} fontSize={1.5} color="#555">
+        <Text ref={textRef} fontSize={1.4} color="#555">
           Hello
         </Text>
       </RenderTexture>

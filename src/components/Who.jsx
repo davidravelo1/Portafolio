@@ -24,10 +24,8 @@ const Container = styled.div`
 
 const Left = styled.div`
    flex:1;
-   display: flex;
-   flex-direction: column;
-   margin-right:100px;
-   @media (max-width: 768px) {
+   position: initial;
+   @media (max-width: 1080px) {
         display: none;
     }
 `;
@@ -35,7 +33,7 @@ const Left = styled.div`
 const Title = styled.h1`
     font-size: 74px;
     margin:0;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         font-size: 60px;
     }
 `;
@@ -44,7 +42,7 @@ const Developer = styled.div`
     display: flex; 
     align-items: center; 
     gap: 10px;
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         
         align-items: center; 
         text-align: center;
@@ -52,7 +50,7 @@ const Developer = styled.div`
 `;
 
 const Subtitle = styled.h2`
-    color: #536DFE;
+    color: #1A237E;
     margin:0;
 `;
 
@@ -61,7 +59,7 @@ const Icon = styled.img`
 `;
 
 const Describe = styled.p`
-     @media (max-width: 768px) {
+     @media (max-width: 1080px) {
         font-size: 20px;
     }
 `
@@ -81,7 +79,7 @@ const Right = styled.div`
    flex:1;
    position: relative;
    top: 20%;
-   @media (max-width: 768px) {
+   @media (max-width: 1080px) {
         display: flex;
         flex-direction: column;
         align-items: center; 
